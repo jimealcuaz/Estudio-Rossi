@@ -1,0 +1,424 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a,
+a:active {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+
+body {
+    font-family: 'Quattrocento', serif;
+}
+
+/* HEADER */
+
+.df-navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    padding: 15px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+.df-ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+}
+
+.df-ul li {
+    margin: 20px
+}
+
+.inicio {
+    letter-spacing: 2px;
+}
+
+.areas {
+    letter-spacing: 2px;
+}
+
+.novedades {
+    letter-spacing: 2px;
+}
+
+.contacto {
+    letter-spacing: 2px;
+}
+
+/* MAIN INDEX*/
+
+.portada {
+    background-image: url(./imagenes/justicia+retributiva+y+restaurativa.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+}
+
+.titulo {
+    font-weight: normal;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    font-weight: bolder;
+    font-size: xx-large;
+}
+
+.subtitulo {
+    font-weight: normal;
+    text-align: center;
+    font-size: x-large;
+}
+
+.presentacion {
+    margin: 50px;
+    padding: 50px;
+    font-weight: normal;
+    text-align: center;
+    width: 60%;
+    height: auto;
+    flex-direction: column;
+    color: black;
+}
+
+.nuestra-firma-titulo {
+    font-weight: normal;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.nuestra-firma-parrafo {
+    width: auto;
+    height: 500px;
+    padding: 20px;
+    line-height: 25px;
+}
+
+.quienes-somos-titulo {
+    font-weight: normal;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.quienes-somos-parrafo {
+    width: auto;
+    height: 500px;
+    padding: 20px;
+    line-height: 25px;
+}
+
+.nuestra-mision-titulo {
+    font-weight: normal;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    color: black;
+}
+
+.nuestra-mision-parrafo {
+    width: auto;
+    height: 500px;
+    padding: 20px;
+    line-height: 25px;
+    color: black;
+}
+
+.contenedor-presentacion {
+    display: grid;
+    margin: 10px;
+    padding: 10px;
+    width: 90%;
+    height: auto;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 2fr 2fr;
+    grid-template-areas:
+        "hijo-nuestrafirma hijo-quienessomos"
+        "hijo-nuestramision hijo-nuestramision";
+}
+
+.hijo-nuestramision {
+    grid-area: hijo-nuestramision;
+}
+
+.hijo-nuestrafirma {
+    grid-area: hijo-nuestrafirma;
+}
+
+.hijo-quienessomos {
+    grid-area: hijo-quienessomos;
+}
+
+@media screen and (max-widht 700px){
+    .contenedor-presentacion {
+        display: grid;
+        margin: 10px;
+        padding: 10px;
+        width: 90%;
+        height: auto;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            "hijo-nuestrafirma hijo-quienessomos hijo-nuestramision";
+    }
+}
+/*MAIN AREAS*/
+
+.titulo-areas {
+    font-weight: normal;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    font-weight: bolder;
+    font-size: xx-large;
+    color: black;
+}
+
+.df-areas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-image: url(./imagenes/justicia+retributiva+y+restaurativa.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    font-size: large;
+}
+
+.derecho-laboral {
+    margin: 30px;
+    padding: 20px;
+    color: black
+}
+
+.derecho-laboral-lista {
+    text-align: center;
+    list-style: none;
+}
+
+.derecho-civil {
+    margin: 30px;
+    padding: 20px;
+    color: black
+}
+
+.derecho-civil-lista {
+    text-align: center;
+    list-style: none;
+}
+
+.derecho-de-familia {
+    margin: 30px;
+    padding: 20px;
+    color: black
+}
+
+.derecho-de-familia-lista {
+    text-align: center;
+    list-style: none;
+}
+
+.derecho-penal {
+    margin: 30px;
+    padding: 20px;
+    color: black
+}
+
+.derecho-penal-lista {
+    text-align: center;
+    list-style: none;
+}
+
+/* MAIN EXTRAJUDICIALES*/
+
+.extrajudiciales {
+    padding: 20px;
+    margin: 20px;
+}
+
+
+.contenedor-extraj {
+    margin: 10px;
+    padding: 10px;
+    width: 90%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "div-reclamos formulario-de-reclamo";
+    background-image: url(./imagenes/justicia+retributiva+y+restaurativa.jpeg);
+    background-size: cover;
+}
+
+@media only screen and (max-width: 700px) {
+    margin: 10px;
+    padding: 10px;
+    width: 90%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
+    grid-template-areas:
+        "div-reclamos formulario-de-reclamo";
+    background-image: url(./imagenes/justicia+retributiva+y+restaurativa.jpeg);
+    background-size: cover;
+}
+
+.div-reclamos {
+    width: 50%;
+    height: auto;
+    grid-area: div-reclamos;
+    background-color: black;
+    color: white;
+}
+
+.formulario-de-reclamo {
+    margin: 20px;
+    padding: 20px;
+    width: auto;
+    height: auto;
+    grid-area: formulario-de-reclamo;
+    background-color: black;
+    color: white;
+}
+
+.titulo-extrajudiciales {
+    font-weight: normal;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    font-weight: bolder;
+    font-size: xx-large;
+    color: black;
+}
+
+.titulo-reclamos {
+    margin: 20px;
+    padding: 20px;
+}
+
+
+.titulo-reclamos {
+    text-align: center;
+    display: flex;
+    font-size: larger;
+}
+
+.parrafo-reclamos {
+    padding: 20px;
+    line-height: 25px;
+    width: auto;
+    text-align: center;
+    font-size: larger;
+}
+
+/*MAIN TURNO*/
+
+.titulo-turnos {
+    color: rgb(0, 0, 0);
+    font-weight: normal;
+    text-align: center;
+    margin: 30px;
+}
+
+.contenedor-turnos {
+    margin: 10px;
+    padding: 10px;
+    width: auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 2fr;
+    grid-template-areas:
+        "hijo-titulo hijo-titulo"
+        "hijo-form-profesional hijo-calendario";
+    background-image: url(./imagenes/justicia+retributiva+y+restaurativa.jpeg);
+    background-size: cover;
+}
+
+.hijo-titulo {
+    grid-area: hijo-titulo;
+}
+
+.hijo-form-profesional {
+    grid-area: hijo-form-profesional;
+    width: auto;
+    height: auto;
+    margin: 20px;
+}
+
+.hijo-calendario {
+    grid-area: hijo-calendario;
+}
+
+/* MAIN CONTACTO*/
+
+.titulo-contacto {
+    color: rgb(0, 0, 0);
+    font-weight: normal;
+    text-align: center;
+    margin: 30px;
+}
+
+.formulario-de-contacto {
+    margin: 20px;
+    padding: 20px;
+}
+
+.nombre-y-apellido {
+    margin: 5px;
+    padding: 5px;
+}
+
+.e-mail {
+    margin: 5px;
+    padding: 5px;
+}
+
+.enviar-datos {
+    margin: 5px;
+    padding: 5px;
+}
+
+.borrar-campos {
+    margin: 5px;
+    padding: 5px;
+}
+
+/* FOOTER */
+
+.bg-footer {
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+}
+
+.df-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.redes a i {
+    font-size: 25px;
+    padding: 5px 10px;
+}
