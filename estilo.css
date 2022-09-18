@@ -17,52 +17,16 @@ body {
 
 /* HEADER */
 
-.df-navbar {
+.container-fluid{
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    background-color: rgb(255, 255, 255);
-    padding: 15px;
+    justify-content:center;
 }
 
-.logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 10px;
-    padding: 10px;
+.navbar-dark{
+    background-color: black;
 }
 
-.df-ul {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    background-color: rgb(255, 255, 255);
-}
-
-.df-ul li {
-    margin: 20px
-}
-
-.inicio {
-    letter-spacing: 2px;
-}
-
-.areas {
-    letter-spacing: 2px;
-}
-
-.novedades {
-    letter-spacing: 2px;
-}
-
-.contacto {
-    letter-spacing: 2px;
-}
 
 /* MAIN INDEX*/
 
