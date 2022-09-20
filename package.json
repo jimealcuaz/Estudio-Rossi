@@ -20,5 +20,8 @@
   "homepage": "https://github.com/jimealcuaz/Estudio-Rossi#readme",
   "dependencies": {
     "node-sass": "^7.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
   }
 }
