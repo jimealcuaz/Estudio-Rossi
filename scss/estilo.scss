@@ -1,3 +1,15 @@
-body{
-    background-color: black;
+portada{
+    .titulo{
+        font-weight: normal;
+        text-align: center;
+        margin: 20px;
+        padding: 20px;
+        font-weight: bolder;
+        font-size: xx-large;
+    }
+    .subtitulo{
+        font-weight: normal;
+        text-align: center;
+        font-size: x-large;
+    }
 }
