@@ -1,3 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a,
+a:active {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+body {
+  font-family: "Quattrocento", serif;
+}
+
+.df-navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(255, 255, 255);
+  padding: 15px;
+}
+
 portada .titulo {
   font-weight: normal;
   text-align: center;

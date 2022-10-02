@@ -1,3 +1,12 @@
+@import './reset';
+@import './variables';
+@import './navbar';
+@import './index';
+@import './areas';
+@import './contacto';
+@import './extrajudiciales';
+@import './turnos';
+
 portada{
     .titulo{
         font-weight: normal;
