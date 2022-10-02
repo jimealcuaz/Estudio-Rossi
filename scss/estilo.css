@@ -12,27 +12,4 @@ a:active {
 
 body {
   font-family: "Quattrocento", serif;
-}
-
-.df-navbar {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  background-color: rgb(255, 255, 255);
-  padding: 15px;
-}
-
-portada .titulo {
-  font-weight: normal;
-  text-align: center;
-  margin: 20px;
-  padding: 20px;
-  font-weight: bolder;
-  font-size: xx-large;
-}
-portada .subtitulo {
-  font-weight: normal;
-  text-align: center;
-  font-size: x-large;
 }/*# sourceMappingURL=estilo.css.map */
