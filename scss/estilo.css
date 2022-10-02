@@ -12,4 +12,73 @@ a:active {
 
 body {
   font-family: "Quattrocento", serif;
+}
+
+.portada {
+  background-image: url(./imagenes/justicia+retributiva+y+restaurativa.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
+}
+.portada .titulo {
+  font-weight: normal;
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  font-weight: bolder;
+  font-size: xx-large;
+  font-family: "Quattrocento", serif;
+}
+.portada .subtitulo {
+  font-weight: normal;
+  text-align: center;
+  font-size: x-large;
+  font-family: "Quattrocento", serif;
+}
+
+.contenedor-presentacion {
+  display: flex;
+  flex-direction: column;
+}
+.contenedor-presentacion .nuestra-firma-titulo {
+  font-weight: normal;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  color: 0, 0, 0;
+}
+.contenedor-presentacion .nuestra-firma-parrafo {
+  width: auto;
+  height: 500px;
+  padding: 20px;
+  line-height: 25px;
+  color: 0, 0, 0;
+}
+.contenedor-presentacion .quienes-somos-titulo {
+  font-weight: normal;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  color: 0, 0, 0;
+}
+.contenedor-presentacion .quienes-somos-parrafo {
+  width: auto;
+  height: 500px;
+  padding: 20px;
+  line-height: 25px;
+  color: 0, 0, 0;
+}
+.contenedor-presentacion .nuestra-mision-titulo {
+  font-weight: normal;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  color: 0, 0, 0;
+}
+.contenedor-presentacion .nuestra-mision-parrafo {
+  width: auto;
+  height: 500px;
+  padding: 20px;
+  line-height: 25px;
+  color: 0, 0, 0;
 }/*# sourceMappingURL=estilo.css.map */

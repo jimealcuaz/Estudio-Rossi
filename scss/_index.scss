@@ -3,4 +3,74 @@
     background-size: cover;
     background-repeat: no-repeat;
     height: 400px;
-  }
+  
+    .titulo {
+        font-weight: normal;
+        text-align: center;
+        margin: 20px;
+        padding: 20px;
+        font-weight: bolder;
+        font-size: xx-large;
+        font-family: $font-quattrocento;
+    }
+    
+    .subtitulo {
+        font-weight: normal;
+        text-align: center;
+        font-size: x-large;
+        font-family: $font-quattrocento;
+    }
+}
+
+.contenedor-presentacion{
+    display: flex;
+    flex-direction: column;
+
+    .nuestra-firma-titulo {
+        font-weight: normal;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        color: $color-texto;
+      }
+      
+      .nuestra-firma-parrafo {
+        width: auto;
+        height: 500px;
+        padding: 20px;
+        line-height: 25px;
+        color: $color-texto;
+      }
+
+      .quienes-somos-titulo {
+        font-weight: normal;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        color: $color-texto;
+      }
+      
+      .quienes-somos-parrafo {
+        width: auto;
+        height: 500px;
+        padding: 20px;
+        line-height: 25px;
+        color: $color-texto;
+      }
+
+      .nuestra-mision-titulo {
+        font-weight: normal;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        color: $color-texto;
+      }
+      
+      .nuestra-mision-parrafo {
+        width: auto;
+        height: 500px;
+        padding: 20px;
+        line-height: 25px;
+        color: $color-texto;
+      }
+}
