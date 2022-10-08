@@ -1,0 +1,12 @@
+.navbar{
+    background-color: rgb(0, 0, 0);
+}
+
+.navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end;
+    .nav-item{
+        margin: 10px;
+        padding: 10px;
+    }
+}
+

@@ -1,0 +1,69 @@
+.portada {
+    background-image:url(../imagenes/fondo-estudio.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+    .titulo {
+        margin: 20px;
+        padding: 20px;
+        font-weight: bold;
+        font-size: xx-large;
+        font-family: $font-quattrocento;
+    }
+    
+    .subtitulo {
+        margin: 20px;
+        padding: 20px;
+        font-size: x-large;
+        font-family: $font-quattrocento;
+    }
+}
+
+.contenedor-presentacion{
+  
+  background-color: $background-negro;  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: larger;
+
+    .hijo-nuestrafirma{
+      margin: 20px;
+      padding: 20px;
+      width: 60%;
+      height:max-content;
+      color: $color-texto;
+
+      .nuestra-firma-titulo{
+        text-align: center;
+      }
+    }
+
+    .hijo-quienessomos{
+      margin: 20px;
+      padding: 20px;
+      width: 60%;
+      height:max-content;
+      color: $color-texto;
+
+      .quienes-somos-titulo{
+        text-align: center;
+      }
+    }
+
+    .hijo-nuestramision{
+      margin: 20px;
+      padding: 20px;
+      width: 60%;
+      height:max-content;
+      color: $color-texto;
+
+      .nuestra-mision-titulo{
+        text-align: center;
+      }
+    }
+}
