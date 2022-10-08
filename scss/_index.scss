@@ -1,76 +1,69 @@
 .portada {
-    background-image: url(./imagenes/justicia+retributiva+y+restaurativa.jpeg);
+    background-image:url(../imagenes/fondo-estudio.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 400px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   
     .titulo {
-        font-weight: normal;
-        text-align: center;
         margin: 20px;
         padding: 20px;
-        font-weight: bolder;
+        font-weight: bold;
         font-size: xx-large;
         font-family: $font-quattrocento;
     }
     
     .subtitulo {
-        font-weight: normal;
-        text-align: center;
+        margin: 20px;
+        padding: 20px;
         font-size: x-large;
         font-family: $font-quattrocento;
     }
 }
 
 .contenedor-presentacion{
-    display: flex;
-    flex-direction: column;
+  
+  background-color: $background-negro;  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: larger;
 
-    .nuestra-firma-titulo {
-        font-weight: normal;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        color: $color-texto;
-      }
-      
-      .nuestra-firma-parrafo {
-        width: auto;
-        height: 500px;
-        padding: 20px;
-        line-height: 25px;
-        color: $color-texto;
-      }
+    .hijo-nuestrafirma{
+      margin: 20px;
+      padding: 20px;
+      width: 60%;
+      height:max-content;
+      color: $color-texto;
 
-      .quienes-somos-titulo {
-        font-weight: normal;
+      .nuestra-firma-titulo{
         text-align: center;
-        display: flex;
-        justify-content: center;
-        color: $color-texto;
       }
-      
-      .quienes-somos-parrafo {
-        width: auto;
-        height: 500px;
-        padding: 20px;
-        line-height: 25px;
-        color: $color-texto;
-      }
+    }
 
-      .nuestra-mision-titulo {
-        font-weight: normal;
+    .hijo-quienessomos{
+      margin: 20px;
+      padding: 20px;
+      width: 60%;
+      height:max-content;
+      color: $color-texto;
+
+      .quienes-somos-titulo{
         text-align: center;
-        display: flex;
-        justify-content: center;
-        color: $color-texto;
       }
-      
-      .nuestra-mision-parrafo {
-        width: auto;
-        height: 500px;
-        padding: 20px;
-        line-height: 25px;
-        color: $color-texto;
+    }
+
+    .hijo-nuestramision{
+      margin: 20px;
+      padding: 20px;
+      width: 60%;
+      height:max-content;
+      color: $color-texto;
+
+      .nuestra-mision-titulo{
+        text-align: center;
       }
+    }
 }

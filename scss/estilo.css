@@ -14,71 +14,101 @@ body {
   font-family: "Quattrocento", serif;
 }
 
+.navbar {
+  background-color: rgb(0, 0, 0);
+}
+
+.navbar-expand-lg .navbar-collapse {
+  justify-content: flex-end;
+}
+.navbar-expand-lg .navbar-collapse .nav-item {
+  margin: 10px;
+  padding: 10px;
+}
+
 .portada {
-  background-image: url(./imagenes/justicia+retributiva+y+restaurativa.jpeg);
+  background-image: url(../imagenes/fondo-estudio.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 400px;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .portada .titulo {
-  font-weight: normal;
-  text-align: center;
   margin: 20px;
   padding: 20px;
-  font-weight: bolder;
+  font-weight: bold;
   font-size: xx-large;
   font-family: "Quattrocento", serif;
 }
 .portada .subtitulo {
-  font-weight: normal;
-  text-align: center;
+  margin: 20px;
+  padding: 20px;
   font-size: x-large;
   font-family: "Quattrocento", serif;
 }
 
 .contenedor-presentacion {
+  background-color: rgb(0, 0, 0);
   display: flex;
   flex-direction: column;
+  align-items: center;
+  font-size: larger;
 }
-.contenedor-presentacion .nuestra-firma-titulo {
-  font-weight: normal;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  color: 0, 0, 0;
-}
-.contenedor-presentacion .nuestra-firma-parrafo {
-  width: auto;
-  height: 500px;
+.contenedor-presentacion .hijo-nuestrafirma {
+  margin: 20px;
   padding: 20px;
-  line-height: 25px;
-  color: 0, 0, 0;
+  width: 60%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  color: rgb(255, 255, 255);
 }
-.contenedor-presentacion .quienes-somos-titulo {
-  font-weight: normal;
+.contenedor-presentacion .hijo-nuestrafirma .nuestra-firma-titulo {
   text-align: center;
-  display: flex;
-  justify-content: center;
-  color: 0, 0, 0;
 }
-.contenedor-presentacion .quienes-somos-parrafo {
-  width: auto;
-  height: 500px;
+.contenedor-presentacion .hijo-quienessomos {
+  margin: 20px;
   padding: 20px;
-  line-height: 25px;
-  color: 0, 0, 0;
+  width: 60%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  color: rgb(255, 255, 255);
 }
-.contenedor-presentacion .nuestra-mision-titulo {
-  font-weight: normal;
+.contenedor-presentacion .hijo-quienessomos .quienes-somos-titulo {
   text-align: center;
-  display: flex;
-  justify-content: center;
-  color: 0, 0, 0;
 }
-.contenedor-presentacion .nuestra-mision-parrafo {
-  width: auto;
-  height: 500px;
+.contenedor-presentacion .hijo-nuestramision {
+  margin: 20px;
   padding: 20px;
-  line-height: 25px;
-  color: 0, 0, 0;
+  width: 60%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  color: rgb(255, 255, 255);
+}
+.contenedor-presentacion .hijo-nuestramision .nuestra-mision-titulo {
+  text-align: center;
+}
+
+.df-footer {
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.df-footer .fa-facebook {
+  margin: 10px;
+  padding: 10px;
+}
+.df-footer .fa-instagram {
+  margin: 10px;
+  padding: 10px;
+}
+.df-footer .fa-whatsapp {
+  margin: 10px;
+  padding: 10px;
 }/*# sourceMappingURL=estilo.css.map */
