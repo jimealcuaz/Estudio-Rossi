@@ -2,8 +2,22 @@
     margin: 20px;
     padding: 20px;
     display: flex;
+    flex-direction:row;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
+
+    .ubicacion{
+        margin: 10px;
+        padding: 10px;
+        .font-footer{
+            font-weight: bolder;
+        }
+    }
+   
+    .contacto{
+        margin: 10px;
+        padding: 10px;
+    }
 
     .fa-facebook{
         margin: 10px;

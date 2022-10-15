@@ -97,8 +97,20 @@ body {
   margin: 20px;
   padding: 20px;
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
+}
+.df-footer .ubicacion {
+  margin: 10px;
+  padding: 10px;
+}
+.df-footer .ubicacion .font-footer {
+  font-weight: bolder;
+}
+.df-footer .contacto {
+  margin: 10px;
+  padding: 10px;
 }
 .df-footer .fa-facebook {
   margin: 10px;
