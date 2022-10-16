@@ -1,0 +1,68 @@
+.df-main-areas {
+    background-color: $background-negro;
+    color: $color-texto;
+
+    .titulo-areas {
+        height: 200px;
+        padding: 20px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+
+    .df-areas {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        grid-template-rows: 2fr 2fr;
+        grid-template-areas:
+            "derecho-laboral derecho-civil"
+            "derecho-de-familia derecho-penal";
+        align-items: center;
+        justify-items: center;
+        margin: 40px;
+        padding: 40px;
+        align-items: flex-start;
+
+        .card {
+            margin: 20px;
+            padding: 20px;
+            align-items: center;
+            background-color: $background-negro;
+            border-style: dashed;
+            border-color: $color-texto;
+
+            .list-group {
+                padding: 30px;
+
+                .list-group-item {
+                    background-color: $background-negro;
+                    color: $color-texto;
+                }
+            }
+        }
+
+        .derecho-laboral {
+            grid-area: derecho-laboral;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        .derecho-civil {
+            grid-area: derecho-civil;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        .derecho-de-familia {
+            grid-area: derecho-de-familia;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        .derecho-penal {
+            grid-area: derecho-penal;
+            margin: 20px;
+            padding: 20px;
+        }
+    }
+}

@@ -63,7 +63,7 @@ body {
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  color: rgb(255, 255, 255);
+  color: rgb(230, 223, 223);
 }
 .contenedor-presentacion .hijo-nuestrafirma .nuestra-firma-titulo {
   text-align: center;
@@ -75,7 +75,7 @@ body {
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  color: rgb(255, 255, 255);
+  color: rgb(230, 223, 223);
 }
 .contenedor-presentacion .hijo-quienessomos .quienes-somos-titulo {
   text-align: center;
@@ -87,10 +87,68 @@ body {
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  color: rgb(255, 255, 255);
+  color: rgb(230, 223, 223);
 }
 .contenedor-presentacion .hijo-nuestramision .nuestra-mision-titulo {
   text-align: center;
+}
+
+.df-main-areas {
+  background-color: rgb(0, 0, 0);
+  color: rgb(230, 223, 223);
+}
+.df-main-areas .titulo-areas {
+  height: 200px;
+  padding: 20px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.df-main-areas .df-areas {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-template-rows: 2fr 2fr;
+  grid-template-areas: "derecho-laboral derecho-civil" "derecho-de-familia derecho-penal";
+  align-items: center;
+  justify-items: center;
+  margin: 40px;
+  padding: 40px;
+  align-items: flex-start;
+}
+.df-main-areas .df-areas .card {
+  margin: 20px;
+  padding: 20px;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+  border-style: dashed;
+  border-color: rgb(230, 223, 223);
+}
+.df-main-areas .df-areas .card .list-group {
+  padding: 30px;
+}
+.df-main-areas .df-areas .card .list-group .list-group-item {
+  background-color: rgb(0, 0, 0);
+  color: rgb(230, 223, 223);
+}
+.df-main-areas .df-areas .derecho-laboral {
+  grid-area: derecho-laboral;
+  margin: 20px;
+  padding: 20px;
+}
+.df-main-areas .df-areas .derecho-civil {
+  grid-area: derecho-civil;
+  margin: 20px;
+  padding: 20px;
+}
+.df-main-areas .df-areas .derecho-de-familia {
+  grid-area: derecho-de-familia;
+  margin: 20px;
+  padding: 20px;
+}
+.df-main-areas .df-areas .derecho-penal {
+  grid-area: derecho-penal;
+  margin: 20px;
+  padding: 20px;
 }
 
 .df-footer {
