@@ -16,78 +16,8 @@ body {
 }
 
 
-/*MAIN TURNO*/
 
-.titulo-turnos {
-  color: rgb(0, 0, 0);
-  font-weight: normal;
-  text-align: center;
-  margin: 30px;
-}
 
-.contenedor-turnos {
-  margin: 10px;
-  padding: 10px;
-  width: auto;
-  height: auto;
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-template-rows: 1fr 2fr;
-  grid-template-areas:
-      "hijo-titulo hijo-titulo"
-      "hijo-form-profesional hijo-calendario";
-  background-image: url(./imagenes/justicia+retributiva+y+restaurativa.jpeg);
-  background-size: cover;
-}
-
-.hijo-titulo {
-  grid-area: hijo-titulo;
-}
-
-.hijo-form-profesional {
-  grid-area: hijo-form-profesional;
-  width: auto;
-  height: auto;
-  margin: 20px;
-}
-
-.hijo-calendario {
-  grid-area: hijo-calendario;
-}
-
-/* MAIN CONTACTO*/
-
-.titulo-contacto {
-  color: rgb(0, 0, 0);
-  font-weight: normal;
-  text-align: center;
-  margin: 30px;
-}
-
-.formulario-de-contacto {
-  margin: 20px;
-  padding: 20px;
-}
-
-.nombre-y-apellido {
-  margin: 5px;
-  padding: 5px;
-}
-
-.e-mail {
-  margin: 5px;
-  padding: 5px;
-}
-
-.enviar-datos {
-  margin: 5px;
-  padding: 5px;
-}
-
-.borrar-campos {
-  margin: 5px;
-  padding: 5px;
-}
 
 
 @media screen and (max-width: 1024px) {
