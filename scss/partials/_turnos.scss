@@ -1,0 +1,25 @@
+.contenedor-turnos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    background-color: $background-negro;
+    .titulo-turnos{
+        margin: 30px;
+        padding: 30px;
+        color: $color-texto;
+    }
+    .form-select{
+        width: 400px;
+        margin: 20px;
+        padding: 20px;
+    }
+    .turnero{
+        margin: 35px;
+        padding: 35px;
+        .link-turnos{
+            color: $color-texto;
+        }
+    }
+}
