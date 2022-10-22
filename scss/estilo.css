@@ -27,7 +27,7 @@ body {
 }
 
 .portada {
-  background-image: url(/imagenes/fondo-estudio-liviana.jpg);
+  background-image: url(../imagenes/fondo-estudio-liviana.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 550px;
@@ -184,7 +184,7 @@ body {
   grid-template-columns: 2fr 2fr 2fr;
   grid-template-rows: 1fr 3fr;
   grid-template-areas: "completa-los-datos completa-los-datos completa-los-datos" "titular tercero siniestro";
-  background-image: url(/imagenes/imagen-transito.jpg);
+  background-image: url(../imagenes/imagen-transito.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   color: rgb(230, 223, 223);
