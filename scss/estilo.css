@@ -55,6 +55,7 @@ body {
   flex-direction: column;
   align-items: center;
   font-size: larger;
+  text-align: center;
 }
 .contenedor-presentacion .hijo-nuestrafirma {
   margin: 20px;
@@ -149,6 +150,148 @@ body {
   grid-area: derecho-penal;
   margin: 20px;
   padding: 20px;
+}
+
+.extrajudiciales {
+  background-color: rgb(0, 0, 0);
+  color: rgb(230, 223, 223);
+}
+.extrajudiciales .titulo-extrajudiciales {
+  height: 200px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin: 0px;
+}
+
+.contenedor-parrafo-reclamos {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(0, 0, 0);
+  color: rgb(230, 223, 223);
+}
+.contenedor-parrafo-reclamos .parrafo-reclamos {
+  text-align: center;
+  font-size: larger;
+  width: 600px;
+  height: 300px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.contenedor-formulario-reclamos {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+  grid-template-rows: 1fr 3fr;
+  grid-template-areas: "completa-los-datos completa-los-datos completa-los-datos" "titular tercero siniestro";
+  background-image: url(/imagenes/imagen-transito.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgb(230, 223, 223);
+}
+.contenedor-formulario-reclamos .completa-los-datos {
+  grid-area: completa-los-datos;
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+  padding: 30px;
+}
+.contenedor-formulario-reclamos .titular {
+  grid-area: titular;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.contenedor-formulario-reclamos .titular .titulo-titular {
+  margin: 15px;
+  padding: 15px;
+}
+.contenedor-formulario-reclamos .titular .nombre-y-apellido {
+  margin: 7px;
+  padding: 7px;
+}
+.contenedor-formulario-reclamos .titular .dominio-titular {
+  margin: 7px;
+  padding: 7px;
+}
+.contenedor-formulario-reclamos .titular .seguro-titular {
+  margin: 7px;
+  padding: 7px;
+}
+.contenedor-formulario-reclamos .tercero {
+  grid-area: tercero;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.contenedor-formulario-reclamos .tercero .titulo-tercero {
+  margin: 15px;
+  padding: 15px;
+}
+.contenedor-formulario-reclamos .tercero .nombre-y-apellido-tercero {
+  margin: 7px;
+  padding: 7px;
+}
+.contenedor-formulario-reclamos .tercero .dominio-tercero {
+  margin: 7px;
+  padding: 7px;
+}
+.contenedor-formulario-reclamos .tercero .seguro-tercero {
+  margin: 7px;
+  padding: 7px;
+}
+.contenedor-formulario-reclamos .siniestro {
+  grid-area: siniestro;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+}
+.contenedor-formulario-reclamos .siniestro .titulo-siniestro {
+  margin: 15px;
+  padding: 15px;
+}
+.contenedor-formulario-reclamos .siniestro .button, .contenedor-formulario-reclamos .siniestro input, .contenedor-formulario-reclamos .siniestro optgroup, .contenedor-formulario-reclamos .siniestro select, .contenedor-formulario-reclamos .siniestro textarea {
+  width: 300px;
+}
+.contenedor-formulario-reclamos .siniestro .fecha {
+  margin: 7px;
+  padding: 7px;
+}
+.contenedor-formulario-reclamos .siniestro .lugar {
+  margin: 7px;
+  padding: 7px;
+}
+
+.contenedor-docu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contenedor-docu .carga-docu {
+  margin: 15px;
+  padding: 15px;
+}
+.contenedor-docu .mb-3 {
+  width: 600px;
+  margin: 15px;
+  padding: 15px;
+}
+
+.contenedor-enviar-datos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.contenedor-enviar-datos .eviar-datos {
+  margin: 10px;
+}
+.contenedor-enviar-datos .borrar-campos {
+  margin: 10px;
 }
 
 .df-footer {
