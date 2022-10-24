@@ -389,4 +389,172 @@ body {
 .df-footer .fa-whatsapp {
   margin: 10px;
   padding: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+  .df-navbar {
+    flex-direction: column;
+  }
+  .df-ul {
+    flex-direction: column;
+  }
+  .df-main-areas {
+    flex-direction: column;
+  }
+  .df-areas {
+    height: auto;
+    flex-direction: column;
+  }
+  .derecho-laboral {
+    text-align: center;
+    transition: none;
+  }
+  .derecho-civil {
+    text-align: center;
+    transition: none;
+  }
+  .derecho-de-familia {
+    text-align: center;
+    transition: none;
+  }
+  .derecho-penal {
+    text-align: center;
+    transition: none;
+  }
+  .extrajudiciales {
+    padding: 0px;
+  }
+  .contenedor-presentacion {
+    display: grid;
+    margin: 10px;
+    padding: 10px;
+    width: 90%;
+    height: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "hijo-nuestrafirma" "hijo-quienessomos" "hijo-nuestramision";
+  }
+  .quienes-somos-parrafo {
+    height: auto;
+  }
+  .nuestra-firma-parrafo {
+    height: auto;
+  }
+  .nuestra-mision-parrafo {
+    height: auto;
+  }
+  .contenedor-turnos {
+    margin: 10px;
+    padding: 10px;
+    width: 90%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
+    grid-template-areas: "div-reclamos formulario-de-reclamo";
+    background-image: url(./imagenes/justicia+retributiva+y+restaurativa.jpeg);
+    background-size: cover;
+  }
+}
+@media screen and (max-width: 580px) {
+  .df-navbar {
+    flex-direction: column;
+  }
+  .df-ul {
+    flex-direction: column;
+  }
+  .df-main-areas {
+    flex-direction: column;
+  }
+  .df-areas {
+    height: auto;
+  }
+  .derecho-laboral {
+    text-align: center;
+  }
+  .derecho-civil {
+    text-align: center;
+  }
+  .derecho-de-familia {
+    text-align: center;
+  }
+  .derecho-penal {
+    text-align: center;
+  }
+  .extrajudiciales {
+    padding: 0px;
+  }
+  .contenedor-presentacion {
+    display: grid;
+    margin: 10px;
+    padding: 10px;
+    width: 90%;
+    height: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "hijo-nuestrafirma" "hijo-quienessomos" "hijo-nuestramision";
+  }
+  .quienes-somos-parrafo {
+    height: auto;
+  }
+  .nuestra-firma-parrafo {
+    height: auto;
+  }
+  .nuestra-mision-parrafo {
+    height: auto;
+  }
+  .contenedor-turnos {
+    margin: 10px;
+    padding: 10px;
+    width: 90%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
+    grid-template-areas: "div-reclamos formulario-de-reclamo";
+    background-image: url(./imagenes/justicia+retributiva+y+restaurativa.jpeg);
+    background-size: cover;
+  }
+}
+@media screen and (max-width: 320px) {
+  .df-navbar {
+    flex-direction: column;
+  }
+  .df-ul {
+    flex-direction: column;
+  }
+  .df-areas {
+    display: flex;
+    flex-direction: column;
+  }
+  .extrajudiciales {
+    padding: 0px;
+  }
+  .contenedor-presentacion {
+    display: grid;
+    margin: 10px;
+    padding: 10px;
+    width: 90%;
+    height: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "hijo-nuestrafirma" "hijo-quienessomos" "hijo-nuestramision";
+  }
+  .quienes-somos-parrafo {
+    height: auto;
+  }
+  .nuestra-firma-parrafo {
+    height: auto;
+  }
+  .nuestra-mision-parrafo {
+    height: auto;
+  }
+  .contenedor-formulario-reclamos {
+    margin: 10px;
+    padding: 10px;
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=estilo.css.map */
