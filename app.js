@@ -26,4 +26,10 @@ else{
     alert ("Tu consulta no tiene costo")
 }
 
+function restar (valorConsulta, descuentoAsegurado) {
+    let resultado = valorConsulta - descuentoAsegurado;
+    return resultado;
+}
+console.log(restar(5000-900));
+
 
