@@ -1,4 +1,17 @@
 let tema = prompt("Desea consultar sobre siniestros, penal o sucesiones?");
+let consulta = prompt("Cuantos minutos desea para su consulta?");
+let resultado;
+let ingresarNombre = prompt("Ingresar Nombre");
+let i = 1;
+let valorConsulta;
+let descuentoAsegurado;
+
+function restar(valorConsulta, descuentoAsegurado) {
+    resultado = valorConsulta - descuentoAsegurado;
+    return resultado;
+}
+console.log(restar(5000 - 900));
+
 
 switch (tema) {
     case "siniestros":
@@ -9,7 +22,7 @@ switch (tema) {
         alert("Deberá sacar turno con Augusto");
         break;
 
-    case "Sucesiones":
+    case "sucesiones":
         alert("Deberá sacar turno con Jimena");
         break;
 
@@ -18,18 +31,35 @@ switch (tema) {
         break;
 }
 
-let consulta = prompt("Cuantos minutos desea para su consulta?");
-if (consulta > 30){
-    alert ("Deberás abonar la consulta")
+
+if (consulta > 30) {
+    alert("Deberás abonar la consulta")
 }
-else{
-    alert ("Tu consulta no tiene costo")
+else {
+    alert("Tu consulta no tiene costo")
 }
 
-function restar (valorConsulta, descuentoAsegurado) {
-    let resultado = valorConsulta - descuentoAsegurado;
-    return resultado;
+
+
+for (let i = 1; i <= 10; i++) {
+    ingresarNombre = prompt("Ingresar Nombre");
+    alert(" Turno N° " + i + "Nombre: " + ingresarNombre);
 }
-console.log(restar(5000-900));
+
+const servicios = [
+    { nombreServicio: "Confección de contrato", precio: "5000" },
+    { nombreServicio: "Asesoramiento legal", precio: "3000" },
+    { nombreServicio: "Representación en juicio", precio: "10000" },
+]
+
+servicios.forEach((servicios) => {
+    alert(servicios.nombreServicio);
+    alert(servicios.precio)
+})
+
+const descuentos = ["Aseegurado", "Cliente"]
 
 
+const carrito = [];
+const total = servicios.concat(descuentos)
+console.log(total)
