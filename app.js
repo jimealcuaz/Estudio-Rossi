@@ -2,9 +2,12 @@ let tema = prompt("Desea consultar sobre siniestros, penal o sucesiones?");
 let consulta = prompt("Cuantos minutos desea para su consulta?");
 let resultado;
 let ingresarNombre = prompt("Ingresar Nombre");
-let i = 1;
 let valorConsulta;
 let descuentoAsegurado;
+let titulo = document.querySelector(".titulo").textContent = "Estudio Rossi";
+let subtitulo = document.querySelector(".subtitulo").textContent = "Servicios Juridicos";
+let agregarInput = document.createElement("input");
+let eviarDatos = document.querySelector(".enviar-datos");
 
 function restar(valorConsulta, descuentoAsegurado) {
     resultado = valorConsulta - descuentoAsegurado;
@@ -63,3 +66,16 @@ const descuentos = ["Aseegurado", "Cliente"]
 const carrito = [];
 const total = servicios.concat(descuentos)
 console.log(total)
+
+console.log(titulo)
+console.log(subtitulo)
+
+agregarInput.setAttribute("placeholder", "Numero de Poliza")
+
+enviarDatos.addEventListener("click", ()=>{
+    console.log("Estas seguro?")
+})
+
+const aJson = JSON.stringify(servicios)
+localStorage.setItem("cursos", aJson)
+
