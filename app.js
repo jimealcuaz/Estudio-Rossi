@@ -1,81 +1,33 @@
-let tema = prompt("Desea consultar sobre siniestros, penal o sucesiones?");
-let consulta = prompt("Cuantos minutos desea para su consulta?");
-let resultado;
-let ingresarNombre = prompt("Ingresar Nombre");
-let valorConsulta;
-let descuentoAsegurado;
-let titulo = document.querySelector(".titulo").textContent = "Estudio Rossi";
-let subtitulo = document.querySelector(".subtitulo").textContent = "Servicios Juridicos";
-let agregarInput = document.createElement("input");
-let eviarDatos = document.querySelector(".enviar-datos");
+let reclamante = document.querySelector("#nombretitular")
+let patenteReclamante = document.querySelector("#patentetitular")
+let seguroReclamante = document.querySelector("#segurotitular")
+let tercero = document.querySelector("#nombretercero")
+let seguroTercero = document.querySelector("#segurotercero")
+let fechaSiniestro = document.querySelector("#fechasiniestro")
+let lugarSiniestro = document.querySelector("#lugarsiniestro")
+let formularioTitular = document.querySelector("#form-titular")
+const reclamo = [];
 
-function restar(valorConsulta, descuentoAsegurado) {
-    resultado = valorConsulta - descuentoAsegurado;
-    return resultado;
-}
-console.log(restar(5000 - 900));
+    formularioTitular.addEventListener("submit", (e)=>{
+    e.preventDefault()
+    formularioTitular.innerHTML = `
+    <div class="alert alert-info" role="alert">
+        <h3>RECLAMO CARGADO CON EXITO</h3>
+        <p>Gracias ${reclamante.value} por cargar los datos del siniestro.</p>
+    </div> 
+    `
+    })
 
-
-switch (tema) {
-    case "siniestros":
-        alert("Deberá sacar turno con Emilio");
-        break;
-
-    case "penal":
-        alert("Deberá sacar turno con Augusto");
-        break;
-
-    case "sucesiones":
-        alert("Deberá sacar turno con Jimena");
-        break;
-
-    default:
-        alert("Si tiene dudas, escribanos mediante el canal de consultas");
-        break;
-}
-
-
-if (consulta > 30) {
-    alert("Deberás abonar la consulta")
-}
-else {
-    alert("Tu consulta no tiene costo")
-}
-
-
-
-for (let i = 1; i <= 10; i++) {
-    ingresarNombre = prompt("Ingresar Nombre");
-    alert(" Turno N° " + i + "Nombre: " + ingresarNombre);
-}
-
-const servicios = [
-    { nombreServicio: "Confección de contrato", precio: "5000" },
-    { nombreServicio: "Asesoramiento legal", precio: "3000" },
-    { nombreServicio: "Representación en juicio", precio: "10000" },
-]
-
-servicios.forEach((servicios) => {
-    alert(servicios.nombreServicio);
-    alert(servicios.precio)
-})
-
-const descuentos = ["Aseegurado", "Cliente"]
-
-
-const carrito = [];
-const total = servicios.concat(descuentos)
-console.log(total)
-
-console.log(titulo)
-console.log(subtitulo)
-
-agregarInput.setAttribute("placeholder", "Numero de Poliza")
-
-enviarDatos.addEventListener("click", ()=>{
-    console.log("Estas seguro?")
-})
-
-const aJson = JSON.stringify(servicios)
-localStorage.setItem("cursos", aJson)
-
+    const reclamoCargado = {
+        reclamante: `${reclamante.value}`,
+        patenteReclamante: `${patenteReclamante.value}`,
+        seguroReclamante: `${seguroReclamante.value}`,
+        tercero: `${tercero.value}`,
+        seguroTercero: `${seguroTercero.value}`,
+        fechaSiniestro: `${fechaSiniestro.value}`,
+        lugarSiniestro: `${lugarSiniestro.value}`,
+        formularioTitular: `${formularioTitular.value}`,
+    }
+    reclamo.push(reclamoCargado)
+    const aJson = JSON.stringify(reclamo)
+    localStorage.setItem("reclamos", aJson)
