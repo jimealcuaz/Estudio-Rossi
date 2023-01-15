@@ -6,17 +6,20 @@ let seguroTercero = document.querySelector("#segurotercero")
 let fechaSiniestro = document.querySelector("#fechasiniestro")
 let lugarSiniestro = document.querySelector("#lugarsiniestro")
 let formularioTitular = document.querySelector("#form-titular")
+let botonReclamo = document.querySelector(".btn-reclamo")
 
 const reclamo = []
 
-formularioTitular.addEventListener("submit", (e) => {
+botonReclamo.addEventListener("click", function(){
+    Swal.fire({
+        icon: 'success',
+        title: 'Reclamo cargado con éxito',
+      });
+    })
+
+    if(formularioTitular){
+    formularioTitular.addEventListener("submit", (e) => {
     e.preventDefault()
-    formularioTitular.innerHTML = `
-    <div class="alert alert-info" role="alert">
-        <h3>RECLAMO CARGADO CON EXITO</h3>
-        <p>Gracias ${reclamante.value} por cargar los datos del siniestro.</p>
-    </div> 
-    `
 
     const reclamoCargado = {
         reclamante: `${reclamante.value}`,
@@ -32,7 +35,7 @@ formularioTitular.addEventListener("submit", (e) => {
     reclamo.push(reclamoCargado)
     const aJson = JSON.stringify(reclamo)
     localStorage.setItem("reclamos", aJson)
-})
+})}
 
 const servicios = [
     { nombre: "Familia", precio: 1000, id: 1 },
@@ -44,7 +47,7 @@ const servicios = [
 const botonAgregar = document.querySelectorAll(".btn-agregar")
 addButton.forEach(el => {
     el.addEventListener("click", (e) => {
-        agregarAlCarrito(e.target.id)
+     agregarAlCarrito(e.target.id)
     })
 });
 
