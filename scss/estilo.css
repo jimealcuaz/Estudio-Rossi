@@ -218,7 +218,7 @@ body {
   align-items: flex-end;
 }
 
-.contenedor-formulario-reclamos {
+#form-titular {
   display: grid;
   grid-template-columns: 2fr 2fr 2fr;
   grid-template-rows: 1fr 3fr;
@@ -228,60 +228,60 @@ body {
   background-size: cover;
   color: rgb(230, 223, 223);
 }
-.contenedor-formulario-reclamos .completa-los-datos {
+#form-titular .completa-los-datos {
   grid-area: completa-los-datos;
   display: flex;
   justify-content: center;
   margin: 30px;
   padding: 30px;
 }
-.contenedor-formulario-reclamos .titular {
+#form-titular .titular {
   grid-area: titular;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.contenedor-formulario-reclamos .titular .titulo-titular {
+#form-titular .titular .titulo-titular {
   margin: 15px;
   padding: 15px;
 }
-.contenedor-formulario-reclamos .titular .nombre-y-apellido {
+#form-titular .titular .nombre-y-apellido {
   margin: 7px;
   padding: 7px;
 }
-.contenedor-formulario-reclamos .titular .dominio-titular {
+#form-titular .titular .dominio-titular {
   margin: 7px;
   padding: 7px;
 }
-.contenedor-formulario-reclamos .titular .seguro-titular {
+#form-titular .titular .seguro-titular {
   margin: 7px;
   padding: 7px;
 }
-.contenedor-formulario-reclamos .tercero {
+#form-titular .tercero {
   grid-area: tercero;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.contenedor-formulario-reclamos .tercero .titulo-tercero {
+#form-titular .tercero .titulo-tercero {
   margin: 15px;
   padding: 15px;
 }
-.contenedor-formulario-reclamos .tercero .nombre-y-apellido-tercero {
+#form-titular .tercero .nombre-y-apellido-tercero {
   margin: 7px;
   padding: 7px;
 }
-.contenedor-formulario-reclamos .tercero .dominio-tercero {
+#form-titular .tercero .dominio-tercero {
   margin: 7px;
   padding: 7px;
 }
-.contenedor-formulario-reclamos .tercero .seguro-tercero {
+#form-titular .tercero .seguro-tercero {
   margin: 7px;
   padding: 7px;
 }
-.contenedor-formulario-reclamos .siniestro {
+#form-titular .siniestro {
   grid-area: siniestro;
   display: flex;
   flex-direction: column;
@@ -289,18 +289,18 @@ body {
   justify-content: center;
   width: auto;
 }
-.contenedor-formulario-reclamos .siniestro .titulo-siniestro {
+#form-titular .siniestro .titulo-siniestro {
   margin: 15px;
   padding: 15px;
 }
-.contenedor-formulario-reclamos .siniestro .button, .contenedor-formulario-reclamos .siniestro input, .contenedor-formulario-reclamos .siniestro optgroup, .contenedor-formulario-reclamos .siniestro select, .contenedor-formulario-reclamos .siniestro textarea {
+#form-titular .siniestro .button, #form-titular .siniestro input, #form-titular .siniestro optgroup, #form-titular .siniestro select, #form-titular .siniestro textarea {
   width: 300px;
 }
-.contenedor-formulario-reclamos .siniestro .fecha {
+#form-titular .siniestro .fecha {
   margin: 7px;
   padding: 7px;
 }
-.contenedor-formulario-reclamos .siniestro .lugar {
+#form-titular .siniestro .lugar {
   margin: 7px;
   padding: 7px;
 }
@@ -320,17 +320,11 @@ body {
   padding: 15px;
 }
 
-.contenedor-enviar-datos {
+.btn-reclamo {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-}
-.contenedor-enviar-datos .eviar-datos {
-  margin: 10px;
-}
-.contenedor-enviar-datos .borrar-campos {
-  margin: 10px;
 }
 
 .contenedor-turnos {

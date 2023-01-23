@@ -50,19 +50,21 @@
     <section>
       <h1 class="titulo-areas">Conocé nuestras áreas de práctica</h1>
     </section>
+
     <section class="animate__animated animate__fadeInUpBig df-areas">
       <div class="card" style="width: 18rem;">
         <div class="derecho-de-familia">
           DERECHO DE FAMILIA
         </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">Alimentos</li>
-          <li class="list-group-item">Divorcios</li>
-          <li class="list-group-item">Régimen de Comunicación</li>
-          <li class="list-group-item">Filiaciones</li>
-        </ul>
-        <button type="button" class="btn btn-outline-secondary">AGREGAR</button>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Alimentos</li>
+            <li class="list-group-item">Divorcios</li>
+            <li class="list-group-item">Régimen de Comunicación</li>
+            <li class="list-group-item">Filiaciones</li>
+          </ul>
+        <button type="button" id="btn-agregar-fam" class="btn btn-outline-secondary ">AGREGAR</button>
       </div>
+
       <div class="card" style="width: 18rem;">
         <div class="derecho-civil">
           DERECHO CIVIL
@@ -74,8 +76,9 @@
           <li class="list-group-item">Desalojos</li>
           <li class="list-group-item">Usucapiones</li>
         </ul>
-        <button type="button" class="btn btn-outline-secondary btn-agregar">AGREGAR</button>
+        <button type="button" id="btn-agregar-civ" class="btn btn-outline-secondary ">AGREGAR</button>
       </div>
+
       <div class="card" style="width: 18rem;">
         <div class="derecho-laboral">
           DERECHO LABORAL
@@ -84,8 +87,9 @@
           <li class="list-group-item">Despidos</li>
           <li class="list-group-item">Accidentes de Trabajo</li>
         </ul>
-        <button type="button" class="btn btn-outline-secondary btn-agregar">AGREGAR</button>
+        <button type="button" id ="btn-agregar-lab" class="btn btn-outline-secondary">AGREGAR</button>
       </div>
+
       <div class="card" style="width: 18rem;">
         <div class="derecho-penal">
           DERECHO PENAL
@@ -95,19 +99,16 @@
           <li class="list-group-item">Excarcelaciones</li>
           <li class="list-group-item">Recursos</li>
         </ul>
-        <button type="button" class="btn btn-outline-secondary btn-agregar">AGREGAR</button>
+        <button type="button" id= "btn-agregar-pen" class="btn btn-outline-secondary ">AGREGAR</button>
       </div>
+
     </section>
-    <table class="table text-white tabla-carrito">
-      <thead>
-        <tr>
-          <th scope="col">#</th>
-          <th scope="col">Servicio</th>
-          <th scope="col">Precio</th>
-        </tr>
-      </thead>
-    </table>
+
+    <div id="div-carrito">
+    </div>
+
   </main>
+
   <footer class="df-footer bg-footer">
     <section class="ubicacion">
       <div>
@@ -129,6 +130,8 @@
       </div>
     </section>
   </footer>
+
+  <script src="../areas.js"></script>
   <script src="https://kit.fontawesome.com/645149ca8d.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
@@ -137,7 +140,6 @@
     integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
     crossorigin="anonymous"></script>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-  <script src="../app.js"></script>
 </body>
 
 </html>
